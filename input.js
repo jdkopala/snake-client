@@ -1,5 +1,4 @@
 const stdin = process.stdin;
-const stdout = process.stdout;
 let connection;
 
 const setupInput = function (conn) {
