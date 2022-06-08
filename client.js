@@ -1,6 +1,6 @@
 const net = require('net');
 
-const connect = function () {
+const connect = function() {
   const conn = net.createConnection({
     host: '10.0.0.181',
     port: 50541
@@ -16,8 +16,8 @@ const connect = function () {
   });
 
   // Snarky message when you connect and timeout
-  conn.on('data', () => {
-    console.log('you ded cuz you idled')
+  conn.on('data', (data) => {
+    console.log(data);
   });
 
   return conn;
